@@ -4,7 +4,7 @@ require($class);
 
 $bot = new OmBot();
 // New instance of the bot.
-$bot->name = "AntiSEPbot"; //Bot Name
+$bot->name = "wonderland"; //Bot Name
 // Name of the bot.
 $bot->idle_timeout = true;
 // Timeout and disconnect if Stranger stops talking.
@@ -19,12 +19,13 @@ while (1)
 	if ($bot->connected && $bot->newConn) // Stranger is on the other end and it's a new connection. Useful if you want to send the initial message.
 	{
 		$bot->newConn = false;
-		$bot->s_msg("Hello! Remember, pornography is contraband and illegal in the US, so DO NOT be tempted by the Omegle bots. Thank you"); //First message to send to the new connection
-	}
+		$bot->s_msg("hi:) join my server to meet new friends and play games! https://discord.gg/PHNXfv9"); //First message to send to the new connection
+	
+
 	if ($bot->newMessage) // We got a new message!
 	{
-		$bot->newMessage=false; // We're handling it.  It's no longer new to us.
-		$bot->s_msg("Ok, sounds good."); // Sending back the contents of the last message.
+		$bot->newMessage=false; // sorry for the bot :)
+		$bot->s_msg("Ok, sounds good."); // 
 	}
 
 }
