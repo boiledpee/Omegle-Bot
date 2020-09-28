@@ -4,7 +4,7 @@ require($class);
 
 $bot = new OmBot();
 // New instance of the bot.
-$bot->name = "AntiSEPbot"; //Bot Name
+$bot->name = "wonderland"; //Bot Name
 // Name of the bot.
 $bot->idle_timeout = true;
 // Timeout and disconnect if Stranger stops talking.
